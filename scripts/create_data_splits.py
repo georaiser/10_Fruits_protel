@@ -2,14 +2,23 @@
 
 import os
 import random
+import shutil
 
 def create_data_splits(root_path,
                        classes,
                        train_dir, test_dir, val_dir,
-                       train_ratio, test_ratio, val_ratio):
+                       train_ratio, test_ratio, val_ratio,
+                       SEED):
+    
+    # Set the manual seeds
+    random.seed(SEED)
    
     for directory in [train_dir, test_dir, val_dir]:
-        if not os.path.exists(directory):
+        
+        if os.path.exists(directory):
+            shutil.rmtree(directory)
+        
+        if not os.path.exists(directory):          
             os.makedirs(directory, exist_ok=True)
             [os.makedirs(os.path.join(directory, folder), exist_ok=True) for folder in classes]
   

@@ -2,3 +2,5 @@
 dataset
 dataset_subset
 models
+scripts/__pycache__/*
+scripts/.ipynb_checkpoints/*
