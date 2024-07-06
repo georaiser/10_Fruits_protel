@@ -11,6 +11,14 @@ This project implements a deep learning image classification model to identify f
 - matplotlib
 - NumPy
 
+## 📋 Requirements
+- Python 3.8+
+- PyTorch 1.9+
+- torchvision 0.10+
+- scikit-learn 0.24+
+- matplotlib 3.4+
+- NumPy 1.20+
+
 ## 📁 Project Structure
 
 - Data preparation and splitting
@@ -22,13 +30,13 @@ This project implements a deep learning image classification model to identify f
 
 ## 🔑 Key Features
 
-- Image classification of fresh fruits
-- Transfer learning with EfficientNetV2 pre-trained weights.
-- Custom dataset handling and data splitting
-- Data augmentation and transformations
+- 📸 Image classification of fresh fruits
+- Transfer learning with EfficientNetV2 pre-trained weights
+- 🔧 Custom dataset handling and data splitting
+- 🎨 Data augmentation and transformations
 - Model fine-tuning and training
 - Employs learning rate scheduling and early stopping
-- Provides visualization of training/validation loss and accuracy
+- 📊 Provides visualization of training/validation loss and accuracy
 - Allows inference on new images with probability scores
 
 ## 🛠️ Technical Implementation
